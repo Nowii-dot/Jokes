@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Jokes/img/freepik__resize-the-image-to-be-smaller-and-position-it-bel__91403.png"
+    <link rel="shortcut icon" href="/img/freepik__resize-the-image-to-be-smaller-and-position-it-bel__91403.png"
         type="image/x-icon">
-    <link rel="stylesheet" href="/Jokes/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <title>SucharyDnia.pl</title>
    <script>
@@ -17,7 +17,7 @@
 
     if (!isLocalhost) {
         const base = document.createElement('base');
-        base.href = '/Jokes/';
+        base.href = '/';
         document.head.appendChild(base);
     }
 </script>
@@ -27,94 +27,23 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <img class="img" src="/Jokes/img/logo2.JPG"
+            <img class="img" src="/img/logo2.JPG"
                 alt="Logo" class="logo">
             <!-- <h1 class="logo-text">Suchary Dnia</h1> -->
             <ul>
-                <li><a href="/">Strona główna</a></li>
-                <li><a href="/about">Dodaj</a></li>
+                <li><a href="/">Suchar Dnia</a></li>
+                <li><a href="/contact">Wszystkie Suchary</a></li>
                 <li><a href="/contact">Top</a></li>
-                <li><a href="/contact">Losuj</a></li>
-                <li><a href="/contact">Logowanie</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="all-jokes" id="all-jokes">
-            <h2>Wszystkie suchary</h2>
-
-            <div class="joke-container">
-                <div class="joke panel-color">
-                    <p class="joke-text">Dlaczego komputerowi nigdy nie jest zimno?</p>
-                    <button class="joke-button joke-show" id="showTextButton">Pokaz</button>
-                    <p id="textElement" style="display: none;">Bo zawsze Windows!</p>
-                </div>
-
-                <div class="user-panel">
-                    <div class="user-avatar">
-                        <img class="user-img" src="/Jokes/img/user.png" alt="User Avatar" class="user-avatar">
-                    </div>
-                    <div class="user-info">
-                        <span class="username">Użytkownik123</span>
-                        <span class="date">2023-10-01</span>
-                    </div>
-                </div>
-
-                <div class="button-panel">
-                    <button class="joke-button like" ><img class="img-like" src="/Jokes/img/like.png"></button>
-                    <button class="joke-button unlike" ><img class="img-like" src="/Jokes/img/unlike.png"></button>
-                    <button class="joke-button average">3,62</button>
-                </div>
-            </div>
-
-            <!-- Drugi suchar -->
-            <div class="joke-container">
-                <div class="joke">
-                    <p class="joke-text">Dlaczego programista nie lubi chodzić do lasu?</p>
-                    <button class="joke-button joke-show" id="showTextButton">Pokaż</button>
-                    <p id="textElement" style="display: none;">Bo boi się bugów!</p>
-                </div>
-                <div class="user-panel">
-                    <div class="user-avatar">
-                        <img class="user-img" src="/Jokes/img/user.png" alt="User Avatar">
-                    </div>
-                    <div class="user-info">
-                        <span class="username">SucharMaster</span>
-                        <span class="date">2023-11-15</span>
-                    </div>
-                </div>
-                <div class="button-panel">
-                    <button id="like" class="joke-button like" ><img class="img-like" src="/Jokes/img/like.png"></button>
-                    <button id="unlike" class="joke-button unlike" ><img class="img-like" src="/Jokes/img/unlike.png"></button>
-                    <button id="avg" class="joke-button average">4,12</button>
-                </div>
-            </div>
-
-            <!-- Trzeci suchar -->
-            <div class="joke-container">
-                <div class="joke">
-                    <p class="joke-text">Jak nazywa się kot programisty?</p>
-                    <button class="joke-button joke-show" id="showTextButton">Pokaż</button>
-                    <p id="textElement" style="display: none;">C++!</p>
-                </div>
-                <div class="user-panel">
-                    <div class="user-avatar">
-                        <img class="user-img" src="/Jokes/img/user.png" alt="User Avatar">
-                    </div>
-                    <div class="user-info">
-                        <span class="username">KociFan</span>
-                        <span class="date">2024-01-03</span>
-                    </div>
-                </div>
-                <div class="button-panel">
-                     <button class="joke-button like" ><img class="img-like" src="/Jokes/img/like.png"></button>
-                    <button class="joke-button unlike" ><img class="img-like" src="/Jokes/img/unlike.png"></button>
-                    <button class="joke-button average">3,88</button>
-                </div>
-            </div>
-
-         
+                <h2>Wszystkie suchary</h2>
+    <div id="jokeList"></div>
+  </section>
+</main>
             <div class="page-panel">
                 <button class="joke-button next-page" onclick="loadMoreJokes()">Następna strona</button>
                 <div class="pagination">
@@ -138,7 +67,7 @@
         <p>&copy; 2025 Sebastian Nowak</p>
     </footer>
 
-    <script src="/Jokes/js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 
