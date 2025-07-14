@@ -10,16 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <title>SucharyDnia.pl</title>
    <script>
-    const isLocalhost =
-        location.hostname === 'localhost' ||
-        location.hostname === '' ||
-        location.protocol === 'file:';
+   <script>
+        const isLocalhost =
+            location.hostname === 'localhost' ||
+            location.protocol === 'file:';
 
-    if (!isLocalhost) {
-        const base = document.createElement('base');
-        base.href = '/';
-        document.head.appendChild(base);
-    }
+        if (!isLocalhost) {
+            document.write('<base href="/Jokes/">');
+        }
+    </script>
 </script>
 
 </head>
