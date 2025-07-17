@@ -289,6 +289,11 @@ footer {
     width: 100px;
     height: 100px;
   }
+  .joke-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
 
   .joke-text {
     font-size: 20px;
@@ -296,30 +301,16 @@ footer {
 
   .joke-button {
     font-size: 16px;
-    width: auto;
-  }
-}
-@media (max-width: 480px) {
-  .header {
-    height: 100px;
+    width: 100%;
   }
 
-  .img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .navbar a {
-    font-size: 18px;
-  }
-
-  .joke-text {
-    font-size: 18px;
-  }
-
-  .joke-button {
+  .page-btn {
+    max-width: 45px;
     font-size: 14px;
-    padding: 6px 10px;
-    width: auto;
+  }
+
+  .page-panel {
+    padding: 15px 5px;
   }
 }
+
